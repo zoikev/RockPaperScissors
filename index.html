@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper or scissors game</title>
+
+    <meta name="description" content="The famous game of Rock, paper or scissors">
+    <meta name="robots" content="index,follow">
+    <link rel="shortcut icon" href="./assets/img/icon-cv.png">
+    <meta name="keywords" content="Rock, paper or scissors">
+    <meta name="author" content="Kevin Morales Rivera">
+    <meta name="theme-color" content="#2a9fff"/>        
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6cb0c5e696.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="gameContainer">
+      <header>
+        <h1 class="infoText">Piedra, papel y tijeras</h1>
+      </header>
+      <main>
+        <div class="scoreBar">
+          <div class="gameScore">
+            <p class="infoText">USUARIO</p>
+            <P class="score infoText" id="user">0</P>
+          </div>
+          <div class="gameScore">
+            <p class="infoText">PC</p>
+            <P class="score infoText" id="pc">0</P>
+          </div>
+        </div>
+        <p class="infoText" id="selectionInfo">Elige tu opción:</p>
+        <div class="chooses">
+          <button class="chose" onclick="combate(1)">
+            <img src="images/piedra.png" alt="rock">
+          </button>
+          <button class="chose" onclick="combate(2)">
+            <img src="images/papel.png" alt="paper">
+          </button>
+          <button class="chose" onclick="combate(3)">
+            <img src="images/tijera.png" alt="scissors">
+          </button>
+        </div>
+        <p class="infoText" id="resultInfo">Buena suerte</p>
+      </main>
+      <footer>
+        <a href="https://zoikev.github.io/curriculum/"><h4>Contact Me</h4></a>            
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
